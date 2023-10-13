@@ -1,16 +1,36 @@
-<header>
-    <nav>
-            
-                <a href="index.html"> Accueil</a>
-            
-                <a href="ampoule.html">1 ampoule</a>
-                
-                    <a href="commander.html"> commander </a>
-                
-        </nav> 
-</header>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guirlande</title>
+    <style>
+        img {
+            width: 15%;
+        }
+
+        img:hover {
+            filter: grayscale(1);
+        }
+    </style>
+</head>
 
 <body>
+
+
+    <header>
+        <nav>
+
+            <a href="index.html"> Accueil</a>
+
+            <a href="ampoule.html">1 ampoule</a>
+
+            <a href="commander.html"> commander </a>
+
+        </nav>
+    </header>
+
     <h1>Formulaire de Commande</h1>
 
     <form action="traitement.php" method="POST">
@@ -24,6 +44,7 @@
 
         <label for="produit">Produit :</label>
         <select id="produit" name="produit" required>
+            <option value="">Choisir un produit</option>
             <option value="produit1">Produit 1</option>
             <option value="produit2">Produit 2</option>
             <option value="produit3">Produit 3</option>
@@ -40,5 +61,9 @@
 
         <input type="submit" value="Envoyer">
     </form>
+
+    <footer>&copy; 2023 Debeve Nathanaël</footer>
+
 </body>
+
 </html>
